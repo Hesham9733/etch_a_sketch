@@ -1,6 +1,26 @@
-.container{
-    background-color: blue;
-}
-#content{
-    color: red;
-}
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    outline: 1px dotted gray;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 960px;
+    height: 960px;
+  }
+  
+  .grid-item {
+    border: 1px solid #ddd;
+    text-align: center;
+    color: transparent;
+  }
+  .btns{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 100px;
+  }
